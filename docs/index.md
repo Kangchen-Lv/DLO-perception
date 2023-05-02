@@ -33,7 +33,7 @@ Please cite our paper if you find it helpful :)
 
 ## Contact
 
-If you have any question, feel free to contact the authors: Kangchen Lv, [lkc21@mails.tsinghua.edu.cn].
+If you have any question, feel free to contact the authors: Kangchen Lv, [lkc21@mails.tsinghua.edu.cn](lkc21@mails.tsinghua.edu.cn).
 
 
 
