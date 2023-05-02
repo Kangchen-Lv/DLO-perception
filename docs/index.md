@@ -1,8 +1,8 @@
-# Global Model Learning for Large Deformation Control of Elastic Deformable Linear Objects: An Efficient and Adaptive Approach
+# Learning to Estimate 3-D States of Deformable Linear Objects from Single-Frame Occluded Point Clouds
 
-The paper is accepted by IEEE Transactions on Robotics (IEEE T-RO).
+The paper is accepted by IEEE ICRA 2023.
 
-[[arXiv](https://arxiv.org/abs/2205.04004)] [[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9888782/)] [[Code](https://github.com/Mingrui-Yu/shape_control_DLO_2)]
+[[arXiv](https://arxiv.org/abs/2210.01433)]
 
 
 
@@ -17,24 +17,23 @@ The paper is accepted by IEEE Transactions on Robotics (IEEE T-RO).
 
 ## Abstract
 
-Robotic manipulation of deformable linear objects (DLOs) has broad application prospects in many fields. However, a key issue is to obtain the exact deformation models (i.e., how robot motion affects DLO deformation), which are hard to theoretically calculate and vary among different DLOs. Thus, shape control of DLOs is challenging, especially for large deformation control which requires global and more accurate models. In this paper, we propose a coupled offline and online data-driven method for efficiently learning a global deformation model, allowing for both accurate modeling through offline learning and further updating for new DLOs via online adaptation. Specifically, the model approximated by a neural network is first trained offline on random data, then seamlessly migrated to the online phase, and further updated online during actual manipulation. Several strategies are introduced to improve the model's efficiency and generalization ability. We propose a convex-optimization-based controller and analyze the system's stability using the Lyapunov method. Detailed simulations and real-world experiments demonstrate that our method can efficiently and precisely estimate the deformation model, and achieve large deformation control of untrained DLOs in 2D and 3D dual-arm manipulation tasks better than the existing methods. It accomplishes all 24 tasks with different desired shapes on different DLOs in the real world, using only simulation data for the offline learning.
+Accurately and robustly estimating the state of deformable linear objects (DLOs), such as ropes and wires, is crucial for DLO manipulation and other applications. However, it remains a challenging open issue due to the high dimensionality of the state space, frequent occlusions, and noises. This paper focuses on learning to robustly estimate the states of DLOs from single-frame point clouds in the presence of occlusions using a data-driven method. We propose a novel two-branch network architecture to exploit global and local information of input point cloud respectively and design a fusion module to effectively leverage the advantages of both methods. Simulation and real-world experimental results demonstrate that our method can generate globally smooth and locally precise DLO state estimation results even with heavily occluded point clouds, which can be directly applied to real-world robotic manipulation of DLOs in 3-D space.
 
 ## Citation
 
 Please cite our paper if you find it helpful :)
 ```
-@ARTICLE{yu2022global,
-  author={Yu, Mingrui and Lv, Kangchen and Zhong, Hanzhong and Song, Shiji and Li, Xiang},
-  journal={IEEE Transactions on Robotics}, 
-  title={Global Model Learning for Large Deformation Control of Elastic Deformable Linear Objects: An Efficient and Adaptive Approach}, 
-  year={2023},
-  volume={39},
-  number={1},
-  pages={417-436},
-  doi={10.1109/TRO.2022.3200546}}
+@INPROCEEDINGS{lv2023learning,
+  author={Lv, Kangchen and Yu, Mingrui and Pu, Yifan and Jiang, Xin and Huang, Gao and Li, Xiang},
+  booktitle={2023 International Conference on Robotics and Automation (ICRA)}, 
+  title={Learning to Estimate 3-D States of Deformable Linear Objects from Single-Frame Occluded Point Clouds}, 
+  year={2023}
+}
 ```
 
+## Contact
 
+If you have any question, feel free to contact the authors: Kangchen Lv, lkc21@mails.tsinghua.edu.cn.
 
 
 
